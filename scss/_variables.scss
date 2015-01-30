@@ -1,0 +1,15 @@
+// breakpoints & media query expressions
+$breakpoints: (mobile: 768px, tablet: 1024px) !default;
+$media-expressions: (screen: "screen",
+		print: "print",
+		retina2x: ("(-webkit-min-device-pixel-ratio: 2)", "(min-resolution: 192dpi)"),
+		retina3x: ("(-webkit-min-device-pixel-ratio: 3)", "(min-resolution: 350dpi)"),
+		landscape: "(orientation:landscape)",
+		portrait: "(orientation:portrait)"
+) !default;
+/**
+media query usage
+mobile:		@include media("<mobile")
+tablet: 	@include media(">=mobile","<=tablet")
+desktop:	@include media(">=tablet")
+*/

@@ -1,0 +1,38 @@
+html {
+  cursor: url(../assets/img/cursor.gif),auto;
+}
+
+body {
+  background-image: image-url('stars.jpg');
+  font-family: "Times New Roman";
+}
+
+h1 {
+  margin-top:40px;
+  color:yellow;
+  font-size:60px;
+  font-style: italic;
+  font-weight:bold;
+  text-align:center;
+
+  animation: blink 1s infinite;
+}
+
+.subheadline {
+  display:block;
+  margin-top:20px;
+  color:red;
+  font-size:40px;
+  font-style: italic;
+  font-weight:bold;
+  text-align:center;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity:1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
