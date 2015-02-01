@@ -146,7 +146,7 @@ table, tr, td {
   }
 }
 
-@media screen and (max-width:768px) {
+@include media("<mobile") {
   .g-left, .g-right, .g-center {
     width:100%;
     margin:0;
