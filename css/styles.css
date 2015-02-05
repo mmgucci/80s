@@ -235,3 +235,6 @@ table, tr, td {
     margin-top: 0 !important;
   }
 }
+.fb-comments, .fb-comments span, .fb-comments iframe {
+  width: 100% !important;
+}
