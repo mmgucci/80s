@@ -1,0 +1,229 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/**
+media query usage
+mobile:		@include media("<mobile")
+tablet: 	@include media(">=mobile","<=tablet")
+desktop:	@include media(">=tablet")
+*/
+html {
+  cursor: url(../assets/img/cursor.gif), auto;
+}
+
+body {
+  background-image: url('../assets/img/stars.jpg?1422608819');
+  font-family: "Times New Roman";
+  font-size: 32px;
+  font-style: italic;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
+header {
+  margin-bottom: 80px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto 80px;
+}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.g-left {
+  box-sizing: border-box;
+  padding-right: 20px;
+  width: 50%;
+  margin-right: -100%;
+  float: left;
+}
+.g-left * {
+  float: right;
+}
+
+.g-right {
+  box-sizing: border-box;
+  padding-left: 20px;
+  width: 50%;
+  margin-right: -100%;
+  margin-left: 50%;
+  float: left;
+}
+.g-right * {
+  float: left;
+}
+
+.g-center {
+  width: 50%;
+  margin-right: -100%;
+  margin-left: 25%;
+}
+.g-center span, .g-center img {
+  display: block;
+  text-align: center;
+}
+.g-center img {
+  margin: 0 auto 20px;
+}
+.g-center img ~ span {
+  margin: 0 auto 10px;
+}
+
+.g-left img, .g-right img, .g-center img {
+  width: 100%;
+}
+.g-left span + img, .g-right span + img, .g-center span + img {
+  margin-top: 30px;
+}
+.g-left:after, .g-right:after, .g-center:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.spotify-link {
+  width: 100%;
+  margin: 40px 0 70px;
+  text-align: center;
+}
+
+.blink {
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+
+h1 {
+  margin-top: 40px;
+  color: yellow;
+  font-size: 60px;
+  text-align: center;
+}
+
+.subheadline {
+  display: block;
+  margin-top: 20px;
+  color: red;
+  font-size: 40px;
+  text-align: center;
+}
+
+.t-yellow {
+  color: yellow;
+}
+
+.t-green {
+  color: green;
+}
+
+.t-red {
+  color: red;
+}
+
+.t-blue {
+  color: blue;
+}
+
+table {
+  width: 100%;
+  margin-top: 30px;
+}
+
+table, tr, td {
+  border: 3px groove grey;
+}
+
+@-webkit-keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+@media (max-width: 767px) {
+  .g-left, .g-right, .g-center {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    float: none;
+  }
+
+  .mobile-margin {
+    margin-top: 30px;
+  }
+
+  span {
+    margin: 0 auto 30px !important;
+  }
+
+  span + img {
+    margin-top: 0 !important;
+  }
+}
