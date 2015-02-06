@@ -13,6 +13,19 @@ body {
 
 header {
   margin-bottom:80px;
+  span {
+    display:block;
+    margin-top:20px;
+    font-size:40px;
+    text-align:center;
+  }
+}
+
+.counter {
+    margin: 20px auto 0;
+    width: 88px;
+    position: relative;
+    display: block;
 }
 
 .container {
@@ -104,13 +117,6 @@ h1 {
   text-align:center;
 }
 
-.subheadline {
-  display:block;
-  margin-top:20px;
-  color:red;
-  font-size:40px;
-  text-align:center;
-}
 
 .footerheadline {
     display:block;

@@ -55,7 +55,8 @@ module.exports = function (grunt) {
                     destPrefix: 'js/lib'
                 },
                 files: {
-                    'jquery.min.js': 'jquery/dist/jquery.min.js'
+                    'jquery.min.js': 'jquery/dist/jquery.min.js',
+                    'jquery.min.map': 'jquery/dist/jquery.min.map'
                 }
             }
         }
